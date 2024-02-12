@@ -1,0 +1,1 @@
+Services sind alle Komponenten die nicht direkt mit der Webseite zu tun haben. Bspw. Datenbank, APIs, Eigene Scripte etc.
