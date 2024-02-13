@@ -94,3 +94,11 @@ button:disabled {
 
     flex: 1 0 0;
 }
+
+.green {
+    color: greenyellow;
+}
+
+.red {
+    color: red;
+}

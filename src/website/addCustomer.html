@@ -4,31 +4,38 @@
   <head>
     <title>ETUR</title>
     <link rel="stylesheet" href="addCustomerStyle.css" />
+    <script src="./addCustomer.js"></script>
   </head>
  
   <body>
+    <a href="./index.html">
+      <button>
+        <img class="back-arrow" src="./ressources/BackArrow.png" width="50" height="50">
+      </button>
+    </a>
+
     <h1>Easy to use Report</h1>
-    <div class="flex-container">
+    <form class="flex-container" onsubmit="customerDataSubmit(this, event)">
       <h3>New Customers</h3>
       <div class="input-fields">
         <div class="items">
           <p>Firmenname</p>
-          <input type="text" />
+          <input id="companyName" type="text" required />
           <p>Vorname</p>
-          <input type="text" />
+          <input id="firstName" type="text" required />
           <p>Nachname</p>
-          <input type="text" />
+          <input id="lastName" type="text" required />
         </div>
  
         <div class="items">
           <p>Email</p>
-          <input type="text" />
+          <input id="email" type="text" required />
           <p>Passwort</p>
-          <input type="text" />
+          <input id="password" type="password" required />
         </div>
       </div>
  
-      <button>Speichern</button>
-    </div>
+      <button class="submit" type="submit">Speichern</button>
+    </form>
   </body>
 </html>
