@@ -1,6 +1,6 @@
 # How to run the frontend?
 
-Ich hatte die dei [index.html](../src/website/index.html) einfach in einem Browser geöffnet dies ist wie folgt möglich...
+Ich hatte die [index.html](../src/website/index.html) einfach in einem Browser geöffnet dies ist wie folgt möglich...
 
 1. Geht in den src/website Ordner
 2. Rechtsklicket auf die index.html und wählt "Copy Path" (Dateipfad kopieren)

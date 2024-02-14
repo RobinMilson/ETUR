@@ -1,1 +1,1 @@
-Hier könnt ihr alle Dateien ablegen die für die Webseite notwendig sind.
+Dieser Ordner enthält alle Dateien die von der Webseite benötigt werden.
