@@ -3,20 +3,19 @@
 <html>
 
 <head>
-  <title>ETUR Login</title>
+  <title>ETUR Product Management Portal</title>
   <link rel="icon" href="../ressources/ETUR Logo.png" />
   <link rel="stylesheet" href="./index.css" />
   <script src="./index.js"></script>
 </head>
 
 <body>
-  <div class="login-base-box">
-    <h1 class="header">Login</h1>
+  <div class="login-signup-base-box">
+    <h1 class="header">Sign Up</h1>
 
-    <div class="login-box">
-      <img src="../ressources/ETUR Logo.png" alt="ETUR" width=200 height=200 />
+    <div class="base-flex-row">
 
-      <div class="login-input-box">
+      <div class="base-flex-coloumn sign-up-box">
         <div class="input-box-header-footer">
           <p class="input-header">Email:</p>
           <input id="input-email" type="text" placeholder="Email" required />
@@ -27,14 +26,20 @@
           <input id="input-password" type="password" placeholder="Password" required />
         </div>
       </div>
+
+      <div class="base-flex-coloumn sign-up-box">
+        <div class="input-box-header-footer">
+          <p class="input-header">Userart:</p>
+          <select id="type">
+            <option>Developer</option>
+            <option>Kunde</option>
+            <option>Product Manager</option>
+          </select>
+        </div>
+      </div>
     </div>
 
-    <div style="text-align: center;">
-      <button id="button" type="button" class="login__submit">Einloggen</button>
-    </div>
-    <p class="self-center no-margin">
-      Don't have an account? <a href="../portalSignup/index.html">Sign up here</a>
-    </p>
+    <button id="button" type="button" class="login__submit">Submit</button>
   </div>
 </body>
 

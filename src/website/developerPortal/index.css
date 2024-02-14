@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: white;
+    background: #a0d2eb;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline white;
+}
+
+.base-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+
+    margin: 5%;
+}
+
+.base-priority-box {
+    max-height: 23rem;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 0;
+
+    overflow-y: scroll;
+
+    background-color: #8458B3;
+}
+
+.report-box {
+    max-height: 65%;
+
+    text-align: center;
+
+    border: 2px solid black;
+
+    border-radius: 2rem;
+
+    flex: 1 0 25%;
+    margin: 1%;
+}
+
+.normal-text {
+    text-decoration: none;
+    color: white;
+}

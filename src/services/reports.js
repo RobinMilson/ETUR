@@ -196,6 +196,10 @@ export async function reportRoutes(fastify, options) {
     });
 
     fastify.get('/reports/:id', async (request, response) => {
+        return reports.find(x => x.id == request.params.id);
+    });
+
+    fastify.get('/reports/customer/:id', async (request, response) => {
         return reports.filter(x => x.customerId == request.params.id);
     });
 
