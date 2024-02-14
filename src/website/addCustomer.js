@@ -1,5 +1,3 @@
-import CryptoJS from "crypto-js";
-
 const backendUrl = "http://localhost:3000";
 
 class CustomerDto {
@@ -8,7 +6,7 @@ class CustomerDto {
         this.firstName = formObject.firstName.value;
         this.lastName = formObject.lastName.value;
         this.companyName = formObject.companyName.value;
-        this.password = CryptoJS.SHA256(formObject.password.value).toString();
+        this.password = formObject.password.value;
     }
 
     email;
