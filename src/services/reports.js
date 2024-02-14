@@ -160,7 +160,7 @@ export async function reportRoutes(fastify, options) {
                 request.body.priority,
                 request.body.comments,
                 request.body.customerId,
-                request.body.closedReason,
+                request.body.closeReason,
                 request.body.references
             );
 
@@ -203,7 +203,7 @@ export async function reportRoutes(fastify, options) {
         return reports.filter(x => x.assignedTo == request.params.name);
     });
 
-    fastify.post('/reports/status', reportUpdateSchema, async (request, response) => {
+    fastify.put('/reports/status', reportUpdateSchema, async (request, response) => {
         const index = reports.findIndex(x => x.id == request.body.id);
 
         if (index >= 0) {
@@ -236,7 +236,7 @@ export async function reportRoutes(fastify, options) {
         }
     });
 
-    fastify.post('/reports/priority', reportUpdateSchema, async (request, response) => {
+    fastify.put('/reports/priority', reportUpdateSchema, async (request, response) => {
         const index = reports.findIndex(x => x.id == request.body.id);
 
         if (index >= 0) {

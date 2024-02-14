@@ -1,5 +1,6 @@
 import { routes } from "./customers.js";
 import { reportRoutes } from "./reports.js";
+import { loginRoutes } from "./logIn.js";
 import Fastify from "fastify";
 import Cors from '@fastify/cors'
 
@@ -9,6 +10,7 @@ const fastify = Fastify({
 
 fastify.register(routes);
 fastify.register(reportRoutes);
+fastify.register(loginRoutes);
 fastify.register(Cors, {
     origin: '*'
 });

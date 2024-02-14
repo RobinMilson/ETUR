@@ -43,7 +43,6 @@ export function createCustomer(
 }
 
 export function getAllCustomers() {
-    console.log(customers);
     return customers;
 }
 

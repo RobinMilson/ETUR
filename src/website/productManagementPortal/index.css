@@ -1,0 +1,11 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: white;
+    background: #a0d2eb;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
