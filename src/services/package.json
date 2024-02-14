@@ -1,0 +1,16 @@
+{
+  "name": "customer-number-server",
+  "version": "1.0.0",
+  "description": "Services sind alle Komponenten die nicht direkt mit der Webseite zu tun haben. Bspw. Datenbank, APIs, Eigene Scripte etc.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.26.1"
+  }
+}
